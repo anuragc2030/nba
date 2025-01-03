@@ -74,7 +74,7 @@ weights /= weights.sum()
 final_predictions = (weights[0] * pred_linear + 
                      weights[1] * pred_nn + 
                      weights[2] * pred_rf + 
-                     weights[3] * pred_dt)/3
+                     weights[3] * pred_dt)/4
 
 # Evaluate the model
 final_mae = mean_squared_error(y_test, final_predictions)
